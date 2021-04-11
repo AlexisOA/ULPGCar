@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487282696815",
+    "project_id": "ulpgcar",
+    "storage_bucket": "ulpgcar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487282696815:android:75a52640304c7308aaa39a",
+        "android_client_info": {
+          "package_name": "com.alexisoa.ulpgcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487282696815-6plhtkrd7iipk7bd1u8dr3ujlvflpngh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHxKvcHmAnjJt7lRAEytB-0mKdIywEhoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487282696815-6plhtkrd7iipk7bd1u8dr3ujlvflpngh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

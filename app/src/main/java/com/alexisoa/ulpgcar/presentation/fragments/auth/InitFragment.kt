@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.alexisoa.ulpgcar.R
 import com.alexisoa.ulpgcar.databinding.FragmentInitBinding
+import com.alexisoa.ulpgcar.presentation.preferenced.UserSharedApplication.Companion.prefs
+import com.example.ulpgcarprototype.data.model.User
 
 class InitFragment : Fragment(R.layout.fragment_init) {
     private lateinit var binding: FragmentInitBinding
@@ -16,6 +18,7 @@ class InitFragment : Fragment(R.layout.fragment_init) {
         binding = FragmentInitBinding.bind(view)
         goToLoginFragment()
         goToRegisterFragment()
+        checkUserValue()
     }
 
     private fun goToLoginFragment(){
@@ -27,6 +30,15 @@ class InitFragment : Fragment(R.layout.fragment_init) {
     private fun goToRegisterFragment(){
         binding.registerbutton.setOnClickListener {
             findNavController().navigate(R.id.action_initFragment_to_registerFragment)
+        }
+    }
+
+    private fun checkUserValue(){
+        if(prefs.getEmail().isNotEmpty() && prefs.getProvider().isNotEmpty()){
+            val user = User(prefs.getEmail(), prefs.getProvider())
+            val action = InitFragmentDirections.actionInitFragmentToNavigationHome(user)
+            findNavController().navigate(action)
+            //findNavController().navigate(R.id.action_initFragment_to_navigation_home)
         }
     }
 }
