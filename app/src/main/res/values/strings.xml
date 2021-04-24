@@ -7,4 +7,11 @@
     <string name="title_dashboard">Buscador</string>
     <string name="title_notifications">Mis viajes</string>
     <string name="title_profile">Perfil</string>
+    <string name="invalid_name">Introduzco su nombre</string>
+    <string name="invalid_lastName">Introduzca sus apellidos</string>
+    <string name="invalid_age">Introduzca su edad, debe ser mayor de edad</string>
+    <string name="invalid_email">Introduzca un e-mail válido</string>
+    <string name="invalid_password">Introduzca una contraseña</string>
+    <string name="invalid_confirmPassword">Vuelva a escribir su contraseña</string>
+
 </resources>

@@ -46,7 +46,7 @@
         <action
             android:id="@+id/action_initFragment_to_navigation_home"
             app:destination="@id/navigation_home"
-            app:popUpTo="@id/initFragment"
+            app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -60,8 +60,12 @@
         <action
             android:id="@+id/action_loginFragment_to_navigation_home"
             app:destination="@id/navigation_home"
-            app:popUpTo="@id/initFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -72,12 +76,30 @@
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
         <action
-            android:id="@+id/action_registerFragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/action_registerFragment_to_registerFormFragment"
+            app:destination="@id/registerFormFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.alexisoa.ulpgcar.presentation.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/registerFormFragment"
+        android:name="com.alexisoa.ulpgcar.presentation.fragments.auth.RegisterFormFragment"
+        android:label="fragment_register_form"
+        tools:layout="@layout/fragment_register_form" >
+        <action
+            android:id="@+id/action_registerFormFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.alexisoa.ulpgcar.presentation.fragments.auth.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

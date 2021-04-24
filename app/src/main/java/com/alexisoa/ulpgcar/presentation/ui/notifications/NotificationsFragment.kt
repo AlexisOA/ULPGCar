@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.alexisoa.ulpgcar.R
+import com.alexisoa.ulpgcar.presentation.preferenced.UserSharedApplication
 
 class NotificationsFragment : Fragment() {
 
@@ -19,13 +20,14 @@ class NotificationsFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
+        return inflater.inflate(R.layout.fragment_notifications, container, false)
+        /*notificationsViewModel =
                 ViewModelProvider(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_notifications, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
-        return root
+        return root*/
     }
 }

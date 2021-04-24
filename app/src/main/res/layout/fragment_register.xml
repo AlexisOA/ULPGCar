@@ -8,47 +8,26 @@
     android:background="@color/background_ulpgcar">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelinefirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
-
-    <Button
-        android:id="@+id/signUpGoogle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_rounded_google"
-        android:drawableStart="@drawable/google"
-        android:text="CONECTAR CON GOOGLE"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/guidelinefirst"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.18" />
 
     <Button
-        android:id="@+id/signUpEmailButton"
+        android:id="@+id/registerFormButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_rounded"
         android:text="CONTINUAR CON EL EMAIL"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUpGoogle"
-        android:background="@drawable/button_rounded"
-        android:textColor="@color/white"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/view"
@@ -80,7 +59,9 @@
         android:textColor="@color/purple_500"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

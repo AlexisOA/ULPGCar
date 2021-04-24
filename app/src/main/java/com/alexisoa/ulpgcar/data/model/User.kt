@@ -5,5 +5,5 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class User (val name: String = "default name",
-                 val provider: String = "default"): Parcelable{
+                 val email: String = "default email"): Parcelable{
 }

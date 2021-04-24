@@ -15,11 +15,18 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentRegisterBinding.bind(view)
         goToLoginFragment()
+        goToRegisterForm()
     }
 
     private fun goToLoginFragment(){
         binding.loginFragmentBut.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        }
+    }
+
+    private fun goToRegisterForm(){
+        binding.registerFormButton.setOnClickListener {
+            findNavController().navigate(R.id.action_registerFragment_to_registerFormFragment)
         }
     }
 }

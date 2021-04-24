@@ -20,13 +20,16 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Hola"/>
+            android:hint="Email"
+
+        />
 
         <TextView
             android:id="@+id/proveedor"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Nos vimo"/>
+            android:hint="Nombre"
+        />
 
         <Button
             android:id="@+id/logoutbutton"
