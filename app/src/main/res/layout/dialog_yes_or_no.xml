@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_dialog_yes_or_no"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="14dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="¿Estás seguro/a?" />
+
+        <TextView
+            android:id="@+id/textDescriptionDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="Una vez eliminado un anuncio, no podrás volver a recuperarlo. Por favor, confirma que quieres eliminarlo"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:alpha="0.8"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_ulpgc"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="Aceptar" />
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/proximanovaregular"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

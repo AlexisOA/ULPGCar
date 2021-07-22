@@ -3,15 +3,39 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main">ULPGCar</string>
-    <string name="title_home">Inicio</string>
-    <string name="title_dashboard">Buscador</string>
-    <string name="title_notifications">Mis viajes</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_travels">Mis viajes</string>
+    <string name="title_publish">Publicar</string>
     <string name="title_profile">Perfil</string>
+    <string name="tittle_messages">Mensajes</string>
     <string name="invalid_name">Introduzco su nombre</string>
     <string name="invalid_lastName">Introduzca sus apellidos</string>
     <string name="invalid_age">Introduzca su edad, debe ser mayor de edad</string>
     <string name="invalid_email">Introduzca un e-mail válido</string>
     <string name="invalid_password">Introduzca una contraseña</string>
     <string name="invalid_confirmPassword">Vuelva a escribir su contraseña</string>
+    <string name="empty_origin">Introduzca un punto de salida</string>
+    <string name="empty_destination">Introduzca un punto de destino</string>
+    <string name="empty_date">Introduzca una fecha</string>
+    <string name="empty_time">Introduzca una hora</string>
+    <string name="empty_brand">Introduzca una marca</string>
+    <string name="empty_color">Introduzca el color</string>
+    <string name="api_key">AIzaSyDJ76GxTt9Hf0SbwcriDADkYjnJKvccUEQ</string>
+    <string-array name="smoke_permission">
+        <item>A veces permito fumar</item>
+        <item>No quiero que se fume</item>
+        <item>El tabaco me molesta</item>
+    </string-array>
+    <string-array name="pets_permission">
+        <item>No admito animales</item>
+        <item>¡Depende de la mascota!</item>
+        <item>Todas las mascotas son bienvenidas</item>
+    </string-array>
+    <string-array name="music_permission">
+        <item>Me gusta la música</item>
+        <item>Te dejo poner música</item>
+        <item>Amo el silencio</item>
+    </string-array>
+
 
 </resources>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.fragments.auth.InitFragment"
+    tools:context=".presentation.ui.auth.InitFragment"
     android:background="@color/background_ulpgcar">
 
     <androidx.constraintlayout.widget.Guideline
@@ -32,7 +32,8 @@
         android:id="@+id/imageView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/logosolo"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guidecentro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +49,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guidelineabajo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/proximanovaregular"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
@@ -61,7 +63,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineabajo"
-        android:background="@drawable/button_rounded"/>
+        android:fontFamily="@font/proximanovaregular"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/white"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -78,8 +82,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_border"
+        android:fontFamily="@font/proximanovaregular"
         android:text="Regístrate"
-        android:textColor="@color/black"
+        android:textColor="@color/blue_ulpgc"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

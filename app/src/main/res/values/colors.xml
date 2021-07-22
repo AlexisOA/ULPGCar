@@ -8,4 +8,55 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background_ulpgcar">#D9E1EF</color>
+    <color name="greaselight">#bfbfbf</color>
+    <color name="grease">#829091</color>
+    <color name="blue_ulpgc">#0066a1</color>
+    <color name="greases">#EDEDED</color>
+    <color name="grey">#E9EAEE</color>
+
+
+    <color name="black_publish">#000000</color>
+    <color name="white_publish">#FFFFFF</color>
+    <color name="grease_publish">#4A4743</color>
+    <color name="greaselight_publish">#81817D</color>
+    <color name="red_osc_publish">#6E030C</color>
+    <color name="red_publish">#EA0202</color>
+    <color name="blue_os_publish">#162249</color>
+    <color name="blue">#0000FF</color>
+    <color name="azure">#007FFF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#D88AD8</color>
+
+    <color name="green_osc">#0C3712</color>
+    <color name="gree_publish">#298F42</color>
+    <color name="brown_publish">#804000</color>
+    <color name="beige">#EFDBBC</color>
+    <color name="orange">#FF5722</color>
+    <color name="yellow_publish">#FFEB3B</color>
+    <color name="notificacion">#CDC159</color>
+
+    <color name="fondoColorPicker">#B2FFFF</color>
+
+
+
+    <array name="rainbow">
+        <item>@color/black_publish</item>
+        <item>@color/white_publish</item>
+        <item>@color/grease_publish</item>
+        <item>@color/greaselight_publish</item>
+        <item>@color/red_osc_publish</item>
+        <item>@color/red_publish</item>
+        <item>@color/blue_os_publish</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/green_osc</item>
+        <item>@color/gree_publish</item>
+        <item>@color/brown_publish</item>
+        <item>@color/beige</item>
+        <item>@color/orange</item>
+        <item>@color/yellow_publish</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+
 </resources>

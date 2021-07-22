@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.travels.TravelsDetailsFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue_ulpgc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:background="@drawable/ic_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+
+
+            <ImageView
+                android:id="@+id/seeProfilePopUp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:background="@drawable/ic_more_vert_24"
+                android:backgroundTint="@color/white"
+                android:layout_margin="17dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageTravelDetails"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profileImageTravelDetails"
+            android:fontFamily="@font/proximanovaregular"
+            android:includeFontPadding="false"
+            android:text="Pepito Pérez"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profileImageTravelDetails"
+            android:fontFamily="@font/proximanovaregular"
+            android:includeFontPadding="false"
+            android:text="Verificado"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width= "380dp"
+        android:layout_height="200dp"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:elevation="15dp"
+        android:translationY="-30dp"
+        android:background="@drawable/bg_white_card_rounded">
+
+        <TextView
+            android:id="@+id/date_travel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lunes 1 de Enero"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/proximanovaregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/grease"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeInit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="11:00"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="15:00"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/location_origin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/ic_location_24"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:text="Las Palmas"
+                android:fontFamily="@font/proximanovaregular"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/line_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/divider" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_location_24"
+                app:tint="@color/gree_publish" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="60dp"
+                android:text="Vecindario"
+                android:fontFamily="@font/proximanovaregular"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@color/background_ulpgcar"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imagePay"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_payment_24"
+                    app:tint="@color/blue_ulpgc" />
+
+                <TextView
+                    android:id="@+id/nameView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Importe total para 1 pasajero"
+                    android:layout_toRightOf="@+id/imagePay"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/cost_travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="12,00 €"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@color/background_ulpgcar"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/passengers"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_passenger_24"
+                    app:tint="@color/blue_ulpgc"/>
+
+                <TextView
+                    android:id="@+id/textPassengers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toRightOf="@+id/passengers"
+                    android:text="4 pasajeros"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/icon_smoke"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/passengers"
+                    android:layout_marginTop="75dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_smoke_24"
+                    app:tint="@color/blue_ulpgc" />
+
+                <TextView
+                    android:id="@+id/smokePermission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textPassengers"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="147dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toRightOf="@+id/icon_smoke"
+                    android:text="Se permite fumar"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/music"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/passengers"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_music_24"
+                    app:tint="@color/blue_ulpgc" />
+
+                <TextView
+                    android:id="@+id/musicPermission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textPassengers"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toRightOf="@+id/music"
+                    android:text="Se permite musica"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_fastfood_24"
+                    app:tint="@color/blue_ulpgc"
+                    />
+
+                <TextView
+                    android:id="@+id/eatPermission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textPassengers"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="222dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toRightOf="@+id/music"
+                    android:text="Se permite comer"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@color/background_ulpgcar"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/brandcar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:tint="@color/blue_ulpgc"
+                    app:srcCompat="@drawable/ic_car_black" />
+
+                <TextView
+                    android:id="@+id/nameBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/brandcar"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:includeFontPadding="false"
+                    android:text="Renault"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/colorCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameBrand"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/brandcar"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:includeFontPadding="false"
+                    android:text="Blanco"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/reserveBtn"
+                        android:layout_width="0.0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_rounded"
+                        android:text="Solicitar Reserva"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <Button
+                        android:id="@+id/openChat"
+                        android:layout_width="0.0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_rounded"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:text="Abrir chat"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:layout_marginBottom="15dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progressbar"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,9 +2,9 @@ package com.alexisoa.ulpgcar.presentation.viewmodels.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
+import com.alexisoa.ulpgcar.data.model.User
 import com.alexisoa.ulpgcar.domain.interactor.login.LoginInteractor
 import com.alexisoa.ulpgcar.valueobject.Resource
-import com.example.ulpgcarprototype.data.model.User
 import com.google.firebase.auth.AuthCredential
 import kotlinx.coroutines.Dispatchers
 import java.lang.Exception

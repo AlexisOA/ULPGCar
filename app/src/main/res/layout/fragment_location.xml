@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".presentation.ui.publish.LocationFragment"
+android:background="@color/background_ulpgcar">
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layout_origin"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="250dp"
+    android:hint="Punto de salida"
+    android:textColorHint="@color/black"
+    app:boxStrokeColor="@color/black"
+    app:hintTextColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:startIconDrawable="@drawable/ic_location_24"
+    app:startIconTint="@color/blue_ulpgc">
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/originPublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:inputType="none"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/proximanovaregular"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layout_destination"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="290dp"
+    android:hint="Punto de llegada"
+    android:textColorHint="@color/black"
+    app:boxStrokeColor="@color/black"
+    app:hintTextColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/layout_origin"
+    app:startIconDrawable="@drawable/ic_location_24"
+    app:startIconTint="@color/blue_ulpgc">
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/destinationPublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proximanovaregular"
+        android:clickable="true"
+        android:inputType="none"
+        android:textColor="@color/black" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <RelativeLayout
+    android:id="@+id/progressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/progressbar"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:padding="20dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:fontFamily="@font/proximanovaregular"
+    android:text="¿Desde dónde sales?"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toTopOf="@+id/layout_origin"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:text="¿A dónde vas?"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toTopOf="@+id/layout_destination"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    android:fontFamily="@font/proximanovaregular"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="4.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingBottom="1.0dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_rounded_grease_light"
+                android:fontFamily="@font/proximanovaregular"
+                android:text="Atrás"
+                android:textColor="@color/black"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_rounded_grease"
+                android:fontFamily="@font/proximanovaregular"
+                android:text="Continuar"
+                android:textColor="@color/white"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Localización"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="28sp"
+        android:textColor="@color/blue_ulpgc"
+        android:fontFamily="@font/proximanovaregular"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

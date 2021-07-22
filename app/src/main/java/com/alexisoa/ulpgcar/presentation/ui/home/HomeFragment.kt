@@ -15,12 +15,10 @@ import com.alexisoa.ulpgcar.data.repository.auth.AuthRepositoryImp
 import com.alexisoa.ulpgcar.databinding.FragmentHomeBinding
 import com.alexisoa.ulpgcar.databinding.FragmentResetPasswordBinding
 import com.alexisoa.ulpgcar.domain.interactor.login.LoginInteractorImp
-import com.alexisoa.ulpgcar.presentation.fragments.auth.ResetPasswordFragmentDirections
 import com.alexisoa.ulpgcar.presentation.preferenced.UserSharedApplication.Companion.prefs
 import com.alexisoa.ulpgcar.presentation.viewmodels.login.LoginViewModel
 import com.alexisoa.ulpgcar.presentation.viewmodels.login.LoginViewModelFactory
 import com.alexisoa.ulpgcar.valueobject.Resource
-import com.example.ulpgcarprototype.data.model.User
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
@@ -81,12 +79,11 @@ class HomeFragment : Fragment() {
 
     private fun FragmentHomeBinding.onSuccess() {
         setProgressBarVisibility(View.GONE)
-        findNavController().navigate(R.id.action_navigation_home_to_initFragment)
+        //findNavController().navigate(R.id.action_navigation_home_to_initFragment)
     }
 
     private fun FragmentHomeBinding.onLoading() {
         setProgressBarVisibility(View.VISIBLE)
-        setToastText("Cargando...")
     }
 
     private fun FragmentHomeBinding.setProgressBarVisibility(visibility: Int) {

@@ -1,9 +1,9 @@
 package com.alexisoa.ulpgcar.domain.interactor.login
 
 import android.util.Patterns
+import com.alexisoa.ulpgcar.data.model.User
 import com.alexisoa.ulpgcar.data.repository.auth.AuthRepository
 import com.alexisoa.ulpgcar.valueobject.Resource
-import com.example.ulpgcarprototype.data.model.User
 import com.google.firebase.auth.AuthCredential
 import java.lang.Exception
 
