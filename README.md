@@ -11,8 +11,8 @@ Esta aplicación hace uso de las siguientes tecnologías:
   
 ## Instalación  
   
-Para instalar la aplicación en su dispositivo móvil, descargue la APK [AQUÍ](https://drive.google.com/file/d/1gGWYni2T-UhFJwH0ri6pFwu_VpTjRL8j/view?usp=sharing)  
+Para instalar la aplicación en su dispositivo móvil, descargue la APK [AQUÍ](https://drive.google.com/file/d/1gGWYni2T-UhFJwH0ri6pFwu_VpTjRL8j/view?usp=sharing_)  
   
 ## Manual  
   
-Descarga el manual de la aplicación [aquí](https://drive.google.com/file/d/1i7mVo8ppI0oDCmGKvXeToNLa14PymxP7/view?usp=sharing)!
+Descarga el manual de la aplicación [aquí](https://drive.google.com/file/d/1i7mVo8ppI0oDCmGKvXeToNLa14PymxP7/view?usp=sharing_)!
